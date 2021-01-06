@@ -28,7 +28,7 @@ header {
     -ms-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 1023px) {
       margin-left: 20px;
     }
   }
@@ -71,10 +71,15 @@ header {
 
 .flexbox-items-buttons {
   margin: 0 50px;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     margin: 0 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+  }
+  &:last-child {
+    @media only screen and (min-width: 767px) and (max-width: 1023px) {
+      margin-right: 20px;
+    }
   }
 }

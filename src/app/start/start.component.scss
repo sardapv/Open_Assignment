@@ -7,7 +7,7 @@
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     display: none;
   }
 }
@@ -45,6 +45,12 @@
       padding-bottom: 50px;
     }
   }
+  @media only screen and (min-width: 767px) and (max-width: 1023px) {
+    flex-flow: column;
+    #calc {
+      padding-bottom: 50px;
+    }
+  }
 }
 
 .small-container {
@@ -57,6 +63,15 @@
   @media only screen and (max-width: 767px) {
     flex-flow: column;
     padding: 100px 0px;
+  }
+
+  @media only screen and (min-width: 767px) and (max-width: 1023px) {
+    flex-flow: column;
+    padding: 100px 20px;
+  }
+
+  @media only screen and (min-width: 1023px) and (max-width: 1400px) {
+    padding: 100px 20px;
   }
 }
 
