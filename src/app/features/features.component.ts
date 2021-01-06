@@ -44,7 +44,6 @@ export class FeaturesComponent {
         divideFactor = this.cards.length;
       }
       let slicedcard = this.cards.splice(divideFactor, divideFactor);
-      console.log(this.cards);
       this.cardsList.push(this.cards);
       this.cards = slicedcard;
     }

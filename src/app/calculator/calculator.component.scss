@@ -13,6 +13,15 @@
     padding: 10px;
     letter-spacing: 0.5px;
   }
+
+  @media only screen and (max-width: 767px) {
+    margin-top: 0;
+    margin-right: 0;
+    padding: 5px;
+    .dots {
+      bottom: -30px;
+    }
+  }
 }
 
 form.main {
@@ -24,6 +33,10 @@ form.main {
   -moz-border-radius: 0px 0px 20px 20px;
   -ms-border-radius: 0px 0px 20px 20px;
   -o-border-radius: 0px 0px 20px 20px;
+
+  @media only screen and (max-width: 767px) {
+    padding: 5px;
+  }
 }
 
 .form-field {
@@ -60,6 +73,10 @@ form.main {
   -moz-border-radius: 0px 20px 20px 0px;
   -ms-border-radius: 0px 20px 20px 0px;
   -o-border-radius: 0px 20px 20px 0px;
+
+  @media only screen and (max-width: 767px) {
+    margin-left: 4px;
+  }
 
   h3 {
     font-family: "Montserrat";
@@ -102,6 +119,7 @@ input[type="text"] {
 
 select {
   border: none;
+  background-color: #fff;
   width: 100%;
   border-bottom: 1px solid #999999;
   font-size: 16px;
