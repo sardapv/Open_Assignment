@@ -1,5 +1,5 @@
 <div class="cards-flex-container">
-  <img src="../../assets/img/sol_wave_bg.svg" alt="wave" class="feature-bg">
+  <img src="assets/img/sol_wave_bg.svg" alt="wave" class="feature-bg">
   <div *ngFor="let cards of cardsList;">
     <ng-container *ngFor="let card of cards;">
       <app-card [image]="card?.image" [featureTitle]="card?.title" [featureDesc]="card?.desc"></app-card>
